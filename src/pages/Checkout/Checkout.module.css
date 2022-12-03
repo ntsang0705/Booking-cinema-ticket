@@ -1,0 +1,13 @@
+.trapezoid {
+   width: 80%;
+   height: 70px;
+   transform: perspective(10px) rotateX(1deg);
+   margin: -2px;
+   background: linear-gradient(rgba(172, 161, 167, 0.8),#fff);
+   border-right: 1px solid transparent;
+   border-left: 1px solid transparent;
+ }
+
+
+
+

@@ -1,0 +1,53 @@
+.ghe{
+   width: 35px;
+   height: 35px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   margin: 15px;
+   background-color: rgb(123,122,122);
+   color: #fff;
+ }
+ 
+ .gheDaDat{
+   background-color: rgb(232,76,76);
+   cursor: no-drop;
+   
+ }
+ 
+ .gheDangDat{
+  background-color: rgb(18, 176, 18)!important;
+    
+ }
+ 
+ .gheVIP{
+  background-color: rgb(201, 173, 83)
+ }
+
+.gheBanDat{
+  background-color: rgb(246, 246, 246);
+  -webkit-box-shadow: -1px 2px 18px -6px rgb(232,76,76);
+  box-shadow: -1px 2px 18px -6px rgb(232,76,76);
+  color: rgb(232,76,76) !important;
+  border: 1px solid rgb(232,76,76)
+}
+
+
+.thongTinDatVe{
+  box-shadow: -4px 0px 10px 0px rgba(0,0,0,0.19);
+-webkit-box-shadow: -4px 0px 10px 0px rgba(0,0,0,0.19);
+-moz-box-shadow: -4px 0px 10px 0px rgba(0,0,0,0.19);
+}
+
+.disabledDatVe{
+  background: gray;
+  cursor: no-drop;
+}
+.datVe{
+  background: #ef4444;
+  cursor: pointer;
+}
+.tabDatVe>.ant-tabs>.ant-tabs-nav{
+  margin: 0 ;
+}
+
