@@ -24,10 +24,10 @@ import EditUser from "./pages/Admin/Users/Edit/EditUser";
 export const history = createBrowserHistory();
 export default function App() {
 	return (
-		<Router history={history}>
+		<Router>
 			<Loading />
 			<Switch>
-				<HomeTemplate exact path="/Booking-cinema-ticket/" Component={Home} />
+				<HomeTemplate exact path="https://ntsang0705.github.io/Booking-cinema-ticket/#/" Component={Home} />
 				<HomeTemplate exact path="/home" Component={Home} />
 				<HomeTemplate exact path="/contact" Component={Contact} />
 				<HomeTemplate exact path="/news" Component={News} />
