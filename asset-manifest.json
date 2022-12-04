@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Booking-cinema-ticket/static/css/main.6aaa92c1.css",
-    "main.js": "/Booking-cinema-ticket/static/js/main.40c92a00.js",
+    "main.js": "/Booking-cinema-ticket/static/js/main.aaf379b2.js",
     "static/js/787.9f96ada4.chunk.js": "/Booking-cinema-ticket/static/js/787.9f96ada4.chunk.js",
     "static/media/zyro-image.png": "/Booking-cinema-ticket/static/media/zyro-image.1c65052c7d1f30e6d45d.png",
     "static/media/backgroundLogin.jpg": "/Booking-cinema-ticket/static/media/backgroundLogin.ec254add044747d883cb.jpg",
@@ -11,11 +11,11 @@
     "static/media/slick.woff": "/Booking-cinema-ticket/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Booking-cinema-ticket/index.html",
     "main.6aaa92c1.css.map": "/Booking-cinema-ticket/static/css/main.6aaa92c1.css.map",
-    "main.40c92a00.js.map": "/Booking-cinema-ticket/static/js/main.40c92a00.js.map",
+    "main.aaf379b2.js.map": "/Booking-cinema-ticket/static/js/main.aaf379b2.js.map",
     "787.9f96ada4.chunk.js.map": "/Booking-cinema-ticket/static/js/787.9f96ada4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6aaa92c1.css",
-    "static/js/main.40c92a00.js"
+    "static/js/main.aaf379b2.js"
   ]
 }
