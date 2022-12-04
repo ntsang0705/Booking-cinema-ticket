@@ -24,7 +24,7 @@ import EditUser from "./pages/Admin/Users/Edit/EditUser";
 export const history = createBrowserHistory();
 export default function App() {
 	return (
-		<Router history={history}>
+		<Router>
 			<Loading />
 			<Switch>
 				<HomeTemplate exact path="/Booking-cinema-ticket/" Component={Home} />
