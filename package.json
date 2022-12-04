@@ -2,7 +2,7 @@
   "name": "khoa5_nguyentruongsang",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ntsang0705.github.io/Booking-cinema-ticket/",
+  "homepage": "Booking-cinema-ticket",
   "dependencies": {
     "@aspnet/signalr": "^1.0.27",
     "@faker-js/faker": "^7.6.0",
