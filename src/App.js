@@ -28,7 +28,7 @@ export default function App() {
 			<Router history={history}>
 				<Loading />
 				<Switch>
-					<HomeTemplate exact path="/" Component={Home} />
+					<HomeTemplate exact path="/Booking-cinema-ticket" Component={Home} />
 					<HomeTemplate exact path="/home" Component={Home} />
 					<HomeTemplate exact path="/contact" Component={Contact} />
 					<HomeTemplate exact path="/news" Component={News} />
