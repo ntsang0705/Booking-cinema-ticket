@@ -27,7 +27,7 @@ export default function Header(props) {
 				<button
 					className="mx-5 flex items-center text-lg"
 					onClick={() => {
-						history.push("/profile");
+						history.push(`/profile`);
 					}}>
 					<span className="mr-3 w-10 h-10 rounded-full bg-blue-400 flex items-center justify-center">
 						{userLogin.taiKhoan.substr(0, 1).toUpperCase()}
@@ -49,7 +49,7 @@ export default function Header(props) {
 		);
 	};
 	return (
-		<header className="p-4 text-white  top-0 w-full z-10 ">
+		<header className="p-4 text-white  top-0 w-full z-10" style={{ backgroundColor: "rgb(15,20,22)" }}>
 			<div className="container flex justify-between h-16 mx-auto">
 				<NavLink rel="noopener noreferrer" to="/" aria-label="Back to homepage" className="flex items-center p-2">
 					<img src={logoImg} alt="logo" width={150} />
@@ -82,6 +82,19 @@ export default function Header(props) {
 							Tin tức
 						</NavLink>
 					</li>
+					{userLogin.maLoaiNguoiDung === "QuanTri" ? (
+						<li className="flex">
+							<NavLink
+								rel="noopener noreferrer"
+								to="/admin"
+								className="flex items-center px-4 -mb-1 dark:border-transparent text-white"
+								activeClassName="border-b-2 border-white">
+								Admin page
+							</NavLink>
+						</li>
+					) : (
+						""
+					)}
 				</ul>
 				<div className="items-center flex-shrink-0 hidden lg:flex">{renderLogin()}</div>
 				<button className="p-4 lg:hidden">

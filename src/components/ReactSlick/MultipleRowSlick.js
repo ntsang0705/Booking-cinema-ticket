@@ -35,7 +35,7 @@ export const MultipleRowsSlick = (props) => {
 	let activeClassSC = sapChieu ? "active_Film" : "non_active_Film";
 	const renderFilm = () => {
 		return props.arrFilm.map((film, index) => {
-			return <FilmCardFlip film={film} />;
+			return <FilmCardFlip key={index} film={film} />;
 		});
 	};
 

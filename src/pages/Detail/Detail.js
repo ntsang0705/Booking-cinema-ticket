@@ -24,9 +24,10 @@ export default function Detail(props) {
 				backgroundPosition: "center",
 				backgroundSize: "cover",
 				minHeight: "100vh",
+				margin: 15,
 			}}>
 			<CustomCard
-				style={{ minHeight: "100vh", paddingTop: 150 }}
+				style={{ minHeight: "100vh", paddingTop: 150, margin: "40px  0 " }}
 				effectColor="#C780FF" // required
 				color="#14AEFF" // default color is white
 				blur={20} // default blur value is 10px

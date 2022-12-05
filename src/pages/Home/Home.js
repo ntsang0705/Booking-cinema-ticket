@@ -16,7 +16,7 @@ export default function Home(props) {
 		dispatch(layDSHeThongRapAction());
 	}, []);
 	return (
-		<div className="container mx-auto">
+		<div className="container mx-auto p-5 my-5" style={{ backgroundColor: "rgb(15,20,22)" }}>
 			<HomeCarousel />
 			<div>
 				<MultipleRowsSlick arrFilm={arrFilm} />

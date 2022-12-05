@@ -138,10 +138,8 @@ export const AdminTemplate = (props) => {
 								{operations}
 							</Header>
 							<Content
-								className="site-layout-background"
 								style={{
 									margin: "24px 16px",
-									padding: 24,
 									minHeight: 280,
 									backgroundColor: "rgb(245, 245, 242)",
 								}}>

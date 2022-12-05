@@ -98,6 +98,8 @@ export default function Films() {
 		<div>
 			<h3 className="text-3xl">Quản lý phim</h3>
 			<Button
+				type="primary"
+				size="large"
 				onClick={() => {
 					history.push("/admin/films/addfilm");
 				}}>

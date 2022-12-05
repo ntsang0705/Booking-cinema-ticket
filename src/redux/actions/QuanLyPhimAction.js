@@ -1,6 +1,6 @@
 import { quanLyPhimServices } from "../../services/QuanLyPhimServices";
 import { SET_DANH_SACH_PHIM, SET_THONG_TIN_FILM } from "../types/QuanLyPhimType";
-import {history} from '../../App'
+import { history } from "../../App";
 
 export const layDSPhimAction = (tenPhim) => {
 	return async (dispatch) => {
@@ -17,7 +17,8 @@ export const themPhimUploadHinhAction = (formData) => {
 	return async (dispatch) => {
 		try {
 			const { data } = await quanLyPhimServices.themPhimUploadHinh(formData);
-			alert("Thanh cong");
+			alert("Thêm thành công");
+			history.push("/admin/films");
 		} catch (error) {
 			console.log(error.response.data);
 		}
@@ -35,27 +36,25 @@ export const layThongTinPhimAction = (maPhim) => {
 	};
 };
 
-export const capNhatPhimUploadAction = (formData)=>{
+export const capNhatPhimUploadAction = (formData) => {
 	return async (dispatch) => {
 		try {
 			const { data } = await quanLyPhimServices.capNhatPhimUpload(formData);
-			dispatch(layDSPhimAction())
-			history.push("/admin/films")
+			dispatch(layDSPhimAction());
+			history.push("/admin/films");
 		} catch (error) {
 			console.log(error.response?.data);
 		}
 	};
-}
+};
 
-export const xoaPhimAction = (maPhim)=>{
+export const xoaPhimAction = (maPhim) => {
 	return async (dispatch) => {
 		try {
 			const { data } = await quanLyPhimServices.xoaPhim(maPhim);
-			
-			dispatch(layDSPhimAction())
-			
+			dispatch(layDSPhimAction(""));
 		} catch (error) {
 			console.log(error.response?.data);
 		}
 	};
-}
+};

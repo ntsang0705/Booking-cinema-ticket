@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Route } from "react-router-dom";
 import Footer from "./Layout/Footer/Footer";
 import Header from "./Layout/Header/Header";
@@ -13,7 +13,7 @@ export const HomeTemplate = (props) => {
 			{...restProps}
 			render={(propsRoute) => {
 				return (
-					<div className="bg-gray-800 ">
+					<div style={{ backgroundColor: "rgb(38,50,56)" }}>
 						<Header {...propsRoute} />
 						<Component {...propsRoute} />
 						<Footer />

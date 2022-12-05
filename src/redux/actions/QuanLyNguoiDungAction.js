@@ -18,6 +18,7 @@ export const dangNhapAction = (thongTinDangNhap) => {
 			history.goBack();
 		} catch (error) {
 			console.log(error.response.data);
+			alert(error?.response.data.content);
 		}
 	};
 };
@@ -66,7 +67,7 @@ export const themNguoiDungAction = (newUser) => {
 		try {
 			const { data } = await quanLyNguoiDungServices.themNguoiDung(newUser);
 			if (data.statusCode === 200) {
-				history.push("/admin/users");
+				dispatch(layThongTinNguoiDungAction());
 				alert("Thêm thành công");
 			}
 		} catch (error) {
@@ -82,6 +83,20 @@ export const capNhatThongTinNguoiDungAction = (user) => {
 			if (data.statusCode === 200) {
 				alert("Cập nhật thành công");
 				history.push("/admin/users");
+			}
+		} catch (error) {
+			console.log(error.response?.data);
+		}
+	};
+};
+
+export const capNhatThongTinNguoiDungDangNhapAction = (user) => {
+	return async (dispatch) => {
+		try {
+			const { data } = await quanLyNguoiDungServices.capNhatThongTinNguoiDungDangNhap(user);
+			if (data.statusCode === 200) {
+				alert("Cập nhật thành công");
+				window.location.reload();
 			}
 		} catch (error) {
 			console.log(error.response?.data);

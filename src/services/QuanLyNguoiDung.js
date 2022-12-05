@@ -23,6 +23,9 @@ export class QuanLyNguoiDungServices extends baseService {
 	capNhatThongTinNguoiDung = (user) => {
 		return this.post("QuanLyNguoiDung/CapNhatThongTinNguoiDung", user);
 	};
+	capNhatThongTinNguoiDungDangNhap = (user) => {
+		return this.put("QuanLyNguoiDung/CapNhatThongTinNguoiDung", user);
+	};
 	xoaNguoiDung = (userID) => {
 		return this.delete(`QuanLyNguoiDung/XoaNguoiDung?TaiKhoan=${userID}`);
 	};
