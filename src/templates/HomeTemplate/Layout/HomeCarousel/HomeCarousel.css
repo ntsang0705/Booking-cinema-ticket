@@ -2,3 +2,27 @@
    margin: 0 !important;
    padding: 0 !important;
 }
+.contentStyle{
+	height: 50rem;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+@media  screen and (max-width: 1280px) {
+   .contentStyle{
+      height: 40rem;
+   }
+}
+
+@media  screen and (max-width: 768px) {
+   .contentStyle{
+      height: 30rem;
+   }
+}
+
+@media  screen and (max-width: 412px) {
+   .contentStyle{
+      height: 15rem;
+   }
+}

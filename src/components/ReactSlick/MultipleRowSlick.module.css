@@ -1,13 +1,17 @@
 .slick-prev:before, .slick-next:before{
    color: gray;
    font-size: 3rem;
+   opacity: 1;
 }
 
 .slick-prev{
-   left:-50px
+   left: -2px;
+   z-index:9
 }
-
-
+.slick-next{
+   right: 25px;
+  
+}
 
 .width-item{
    width: 100% !important;
@@ -19,3 +23,4 @@
 .non_active_Film{
    @apply  border-2 border-white text-white 
 }
+

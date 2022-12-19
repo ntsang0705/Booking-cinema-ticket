@@ -18,9 +18,9 @@ export default function HomeMenu(props) {
 							items={rapChieu.lstCumRap.map((cumRap, index) => {
 								return {
 									label: (
-										<div className="flex items-center" key={index}>
+										<div className="flex items-center w-96" key={index}>
 											<img src={rapChieu.logo} alt="" width="50" />
-											<div className="ml-2 text-left ">
+											<div className="ml-2 text-left grow w-full ">
 												<p className="text-lg font-medium mb-1">{cumRap.tenCumRap}</p>
 												<p className="m-0 italic">{cumRap.diaChi}</p>
 											</div>
@@ -38,7 +38,7 @@ export default function HomeMenu(props) {
 															alt={phim.tenPhim}
 														/>
 														<div className="ml-3">
-															<p className="text-2xl text-green-300 font-medium">{phim.tenPhim}</p>
+															<p className="text-2xl text-red-600 font-medium">{phim.tenPhim}</p>
 															<div className="grid grid-cols-8 gap-4">
 																{phim.lstLichChieuTheoPhim?.map((lichChieu, index) => {
 																	return (

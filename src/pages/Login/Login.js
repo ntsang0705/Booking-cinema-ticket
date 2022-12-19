@@ -196,6 +196,7 @@ export default function Login(props) {
 								</label>
 							</div>
 						</div>
+						<p className="text-center mb-6">Admin account: admin3 / Password: 123456</p>
 						{/* Submit button */}
 						<button
 							type="submit"

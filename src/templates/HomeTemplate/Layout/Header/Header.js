@@ -48,10 +48,15 @@ export default function Header(props) {
 			</Fragment>
 		);
 	};
+
 	return (
-		<header className="p-4 text-white  top-0 w-full z-10" style={{ backgroundColor: "rgb(15,20,22)" }}>
+		<header className="p-4 text-white   top-0 w-full z-10" style={{ backgroundColor: "rgb(15,20,22)" }}>
 			<div className="container flex justify-between h-16 mx-auto">
-				<NavLink rel="noopener noreferrer" to="/" aria-label="Back to homepage" className="flex items-center p-2">
+				<NavLink
+					rel="noopener noreferrer"
+					to="/home"
+					aria-label="Back to homepage"
+					className="flex items-center p-2">
 					<img src={logoImg} alt="logo" width={150} />
 				</NavLink>
 				<ul className="items-stretch hidden space-x-3 lg:flex  ">

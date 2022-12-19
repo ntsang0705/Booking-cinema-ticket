@@ -1,10 +1,10 @@
 .flip-card {
   background-color: transparent;
-  width: 260px;
+  width: 250px;
   height: 400px;
   margin: 50px auto;
-  
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
 
 }
 
@@ -20,15 +20,17 @@
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card-inner:hover {
-  transform: scale(1.2) rotateY(180deg) ;
+  transform: scale(1.2) rotateY(180deg);
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
+  /* Safari */
   backface-visibility: hidden;
 }
 
@@ -44,3 +46,76 @@
   color: white;
   transform: rotateY(180deg);
 }
+
+@media screen and (max-width: 1280px) {
+  .flip-card {
+    width: 200px;
+    height: 300px;
+    margin: 50px auto;
+  }
+
+  .datVe__button {
+    font-size: 17px !important;
+    padding: 8px;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .flip-card {
+    width: 200px;
+    height: 300px;
+    margin: 50px auto;
+  }
+
+  .datVe__button {
+    font-size: 15px !important;
+    padding: 8px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+  .flip-card {
+    width: 110px;
+    height: 150px;
+    margin: 30px auto;
+  }
+
+  .datVe__button {
+    font-size: 10px !important;
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .flip-card {
+    width: 50px;
+    height: 70px;
+    margin: 10px auto;
+  }
+
+  .datVe__button {
+    font-size: 5px !important;
+    padding: 2px !important;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 320px) {
+  .flip-card {
+    width: 20px;
+    height: 30px;
+    margin: 2px auto;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */

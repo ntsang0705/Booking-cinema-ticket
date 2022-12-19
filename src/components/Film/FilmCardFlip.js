@@ -25,13 +25,12 @@ export default function FilmCardFlip(props) {
 					<div
 						className="w-full h-full text-center"
 						style={{ position: "absolute", backgroundColor: "rgba(0,0,0,.8)" }}>
-						<div className="text-2xl mt-2 font-bold p-2">{film.tenPhim}</div>
-						<p className="p-2">{film.moTa.length > 300 ? film.moTa.slice(0, 300) + "  ..." : film.moTa}</p>
+						<div className="lg:text-base  text-2xl mt-2 font-bold p-2">{film.tenPhim}</div>
+						<p className=".mota p-2"> {film.moTa.length > 100 ? film.moTa.slice(0, 100) + "  ..." : film.moTa}</p>
 					</div>
 					<NavLink
 						to={`/detail/${film.maPhim}`}
-						className="w-full text-xl text-white bg-red-500 cursor-pointer py-3 font-bold"
-						style={{ position: "absolute", bottom: 0, left: 0 }}>
+						className="datVe__button w-full 2xl:text-xl text-white bg-red-500 cursor-pointer font-bold absolute bottom-0 left-0">
 						ĐẶT VÉ
 					</NavLink>
 				</div>

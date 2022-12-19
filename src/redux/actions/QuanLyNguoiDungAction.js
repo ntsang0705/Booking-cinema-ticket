@@ -69,9 +69,11 @@ export const themNguoiDungAction = (newUser) => {
 			if (data.statusCode === 200) {
 				dispatch(layThongTinNguoiDungAction());
 				alert("Thêm thành công");
+				history.push("/admin/users");
 			}
 		} catch (error) {
 			console.log(error.response?.data);
+			alert(error.response?.data.content);
 		}
 	};
 };
